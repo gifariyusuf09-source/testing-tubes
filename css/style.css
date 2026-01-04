@@ -1,0 +1,38 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+}
+
+/* Card Hover */
+.service-card:hover {
+  transform: translateY(-10px);
+  transition: 0.3s;
+}
+
+/* Fade-in Scroll */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s, transform 1s;
+}
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Form Card Hover */
+form {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+form:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* WhatsApp Floating */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
+}
